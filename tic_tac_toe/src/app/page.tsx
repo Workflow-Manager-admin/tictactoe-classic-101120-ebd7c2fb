@@ -1,8 +1,5 @@
-import dynamic from "next/dynamic";
-
-const TicTacToeClassic = dynamic(() => import("./TicTacToeClassic"), {
-  ssr: false,
-});
+"use client";
+import TicTacToeClassic from "./TicTacToeClassic";
 
 export default function Home() {
   return <TicTacToeClassic />;
